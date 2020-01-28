@@ -44,6 +44,7 @@ Options -> Multilingual Environment -> Select Input Method
 * farsi-isiri-9147
 
 The keyboard mapping defined here is based on:
+
 فنّاوریِ اطلاعات - چیدمان حروف و علائم فارسی بر صفحه کلید رایانه
 استاندارد ملی ایران ۹۱۴۷ − چاپ اول
 
@@ -56,6 +57,7 @@ Re-Published at: http://www.persoarabic.org/Repub/fpf-isiri-9147
 
 
 Specification of Iran's Persian Character Set is also relevant:
+
 فنّاوریِ اطلاعات -- تبادل و شیوه‌ی نمایش اطلاعاتِ فارسی بر اساس یونی کُد
 استاندارد ملی ایران ۶۲۱۹ −− نسخهی نهایی
 
@@ -95,9 +97,9 @@ to be addressed in the next revision.
 
 Note: the rows of keys below are enclosed in Left-To-Right Override
 embedding, to prevent them from being reordered by the Emacs
-display engine.								     
+display engine.
 
-
+#+begin_example
  +----------------------------------------------------------------+
  ‭| ۱! | ۲٬ | ۳٫ | ۴﷼ | ۵٪ | ۶× | ۷، | ۸* | ۹( | ۰) | -ـ | =+ | `÷ |‬
  +----------------------------------------------------------------+
@@ -107,6 +109,4 @@ display engine.
     +-----------------------------------------------------------+
       ‭| ظ‌ك | طٓ| زژ | رٰ| ذB | دٔ| پء | و< | .> | /؟ |‬
       +-------------------------------------------+
-
-
-							  
+#+end_example
