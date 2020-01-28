@@ -8,13 +8,14 @@ Quail package for inputting Persian/Farsi keyboard
 
 # Table of Contents
 
-1.  [persian-input-method: شیوه‌هایِ درج به فارسی‌](#orgd15e0c4)
-2.  [Overview](#orge6fc593)
-    1.  [Installation](#org0843bd8)
-    2.  [Usage](#orgc0d4fa8)
-3.  [farsi-transliterate-banan](#orga9f9a7f)
-4.  [farsi-isiri-9147](#org7860026)
-    1.  [Keyboard Layout](#orgadcd9de)
+1.  [persian-input-method: شیوه‌هایِ درج به فارسی‌](#orgbb38203)
+2.  [Overview](#org64670e6)
+    1.  [Installation](#orga080175)
+    2.  [Usage](#org68d8150)
+3.  [farsi-transliterate-banan](#orgc8ba23e)
+4.  [farsi-isiri-9147](#org26d0aa2)
+    1.  [Keyboard Layout](#orgddfc0b2)
+5.  [Maintenance And Support:](#orgd9009f2)
 
 
 # Overview
@@ -178,4 +179,9 @@ display engine.
         +-----------------------------------------------------------+
           ‭| ظ‌ك | طٓ| زژ | رٰ| ذB | دٔ| پء | و< | .> | /؟ |‬
           +-------------------------------------------+
+
+
+# Maintenance And Support:
+
+Mohsen BANAN &#x2013; <http://mohsen.1.banan.byname.net/contact>
 
