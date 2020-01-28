@@ -8,12 +8,13 @@ Quail package for inputting Persian/Farsi keyboard
 
 # Table of Contents
 
-1.  [persian-input-method:](#org170d0d5)
-2.  [Overview](#org8ba7632)
-    1.  [Installation](#orgd53cd1e)
-    2.  [Usage](#orgb01c149)
-3.  [farsi-isiri-9147](#orgb90090a)
-    1.  [Keyboard Layout](#org5a16fbb)
+1.  [persian-input-method:](#orge76f0a1)
+2.  [Overview](#org02af776)
+    1.  [Installation](#org475e232)
+    2.  [Usage](#org8c6b3c1)
+3.  [farsi-transliterate-banan](#org667e44a)
+4.  [farsi-isiri-9147](#org5cfbddf)
+    1.  [Keyboard Layout](#orgf56fef8)
 
 
 # Overview
@@ -42,6 +43,68 @@ Persian input-methods are distributed with emacs. No installation is required.
     (call-interactively 'set-input-method)
     (set-input-method "farsi-isiri-9147" t)
     (set-input-method "farsi-transliterate-banan" t)
+
+
+# farsi-transliterate-banan
+
+Given a Qwerty keyboard, use Persian-to-Latin transliteration knowledge
+to reverse transliterate in persian
+
+See <http://www.persoarabic.org/PLPC/120036> document for more complete
+documentation of keyboard bindings and usage instructions.
+
+ISIRI-9147 Persian keyboard is generally not well suited for Iranian-Expatriates
+working/living in the West.
+
+The qwerty keyboard is usually second nature to Persian speaking expatriates and they
+don't want to learn/adapt to ISIRI-9147.  They expect software to adapt to them.
+
+That is what the \`\`Banan Multi-Character (Reverse) Transliteration Persian Input Method'' does.
+
+The typical profile of the user is assumed to be one who:
+
+-   can write in farsi (not just speak it).
+-   is fully comfortable with a qwerty latin keyboard.
+-   is not familiar with isir-9147 and does not wish to be trained.
+-   communicates and writes in a mixed globish/persian &#x2013; not pure persian.
+-   is intuitively familiar with transliteration of farsi/persian into latin based on two letter
+    phonetic mapping to persian characters (e.g., gh ق &#x2013;  kh خ &#x2013; sh ش &#x2013; ch چ &#x2013; zh ژ.
+
+This transliteration keyboard is designed to be intuitive such that
+mapping are easy and natural to remember for a persian writer.
+It is designed to be equivalent in capability to farsi-isiri-9147
+and provide for inputting all characters enumerated in ISIRI-6219.
+
+farsi-transliterate-banan is of course phonetic oriented.  But it is very different from
+pinglish. Pinglish is word oriented where you sound out the word with latin letters &#x2013;
+including the vowels. farsi-transliterate-banan is letter oriented where you enter the
+latin letter/letters closest to the persian letter. And usually omit vowels.
+
+For some persian characters there are multiple ways of inputting
+the same character. For example both \`\`i'' and \`\`y'' produce ی.
+For یک \`\`yk'', \`\`y'' is more natural and for این \`\`ain'', \`\`i'' is more natural.
+
+The more frequently used keys are mapped to lower case. The less frequently used letter moves to
+upper case. For example: \`\`s'' is س and \`\`S'' is ص.  \`\`h'' is ه and \`\`H''
+is ح.
+
+Multi-character input is based on \\, &, and / prefix
+characters. The letter 'h' is used as a postfix for the following two character mappings:
+gh ق &#x2013;  kh خ &#x2013; sh ش &#x2013; ch چ &#x2013; zh ژ  &#x2013; Th ة &#x2013; Yh ى.
+
+Prefix letter \\ is used for two character inputs when an alternate form of a letter
+is desired for example '\&#x00ad;' is: '÷' when '-' is: '-'.
+
+Prefix letter & is used for multi-character inputs when special characters are
+desired based on their abbreviate name. For example you can enter &lrm; to enter the
+\`\`LEFT-TO-RIGHT MARK'' character.
+
+Prefix letter / is used to provide two characters. / is: \`\`ZERO WIDTH NON-JOINER''
+and // is /.
+
+The letter 'h' is used in a number of two character postfix mappings,
+for example \`\`sh'' ش. So if you need the sequence of \`\`s'' and \`\`h'' you
+need to repeat the \`\`s''. For example: سهم = 's' 's' 'h' 'm'.
 
 
 # farsi-isiri-9147

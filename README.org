@@ -41,6 +41,70 @@ Options -> Multilingual Environment -> Select Input Method
 (set-input-method "farsi-transliterate-banan" t)
 #+END_SRC
 
+* farsi-transliterate-banan
+
+Given a Qwerty keyboard, use Persian-to-Latin transliteration knowledge
+to reverse transliterate in persian
+
+See http://www.persoarabic.org/PLPC/120036 document for more complete
+documentation of keyboard bindings and usage instructions.
+
+ISIRI-9147 Persian keyboard is generally not well suited for Iranian-Expatriates
+working/living in the West.
+
+The qwerty keyboard is usually second nature to Persian speaking expatriates and they
+don't want to learn/adapt to ISIRI-9147.  They expect software to adapt to them.
+
+That is what the ``Banan Multi-Character (Reverse) Transliteration Persian Input Method'' does.
+
+The typical profile of the user is assumed to be one who:
+
+ -  can write in farsi (not just speak it).
+ -  is fully comfortable with a qwerty latin keyboard.
+ -  is not familiar with isir-9147 and does not wish to be trained.
+ -  communicates and writes in a mixed globish/persian -- not pure persian.
+ -  is intuitively familiar with transliteration of farsi/persian into latin based on two letter
+    phonetic mapping to persian characters (e.g., gh ق --  kh خ -- sh ش -- ch چ -- zh ژ.
+
+This transliteration keyboard is designed to be intuitive such that
+mapping are easy and natural to remember for a persian writer.
+It is designed to be equivalent in capability to farsi-isiri-9147
+and provide for inputting all characters enumerated in ISIRI-6219.
+
+farsi-transliterate-banan is of course phonetic oriented.  But it is very different from
+pinglish. Pinglish is word oriented where you sound out the word with latin letters --
+including the vowels. farsi-transliterate-banan is letter oriented where you enter the
+latin letter/letters closest to the persian letter. And usually omit vowels.
+
+For some persian characters there are multiple ways of inputting
+the same character. For example both ``i'' and ``y'' produce ی.
+For یک ``yk'', ``y'' is more natural and for این ``ain'', ``i'' is more natural.
+
+The more frequently used keys are mapped to lower case. The less frequently used letter moves to
+upper case. For example: ``s'' is س and ``S'' is ص.  ``h'' is ه and ``H''
+is ح.
+
+Multi-character input is based on \, &, and / prefix
+characters. The letter 'h' is used as a postfix for the following two character mappings:
+gh ق --  kh خ -- sh ش -- ch چ -- zh ژ  -- Th ة -- Yh ى.
+
+
+Prefix letter \ is used for two character inputs when an alternate form of a letter
+is desired for example '\-' is: '÷' when '-' is: '-'.
+
+Prefix letter & is used for multi-character inputs when special characters are
+desired based on their abbreviate name. For example you can enter &lrm; to enter the
+``LEFT-TO-RIGHT MARK'' character.
+
+Prefix letter / is used to provide two characters. / is: ``ZERO WIDTH NON-JOINER''
+and // is /.
+
+The letter 'h' is used in a number of two character postfix mappings,
+for example ``sh'' ش. So if you need the sequence of ``s'' and ``h'' you
+need to repeat the ``s''. For example: سهم = 's' 's' 'h' 'm'.
+
+
+
 * farsi-isiri-9147
 
 The keyboard mapping defined here is based on:
