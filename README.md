@@ -8,13 +8,13 @@ Quail package for inputting Persian/Farsi keyboard
 
 # Table of Contents
 
-1.  [persian-input-method: شیوه‌هایِ درج به فارسی‌](#orgf9dfb35)
-2.  [Overview](#org2477b7c)
-    1.  [Installation](#org9c0b2cd)
-    2.  [Usage](#orgd5784b7)
-3.  [farsi-transliterate-banan](#org8d85130)
-4.  [farsi-isiri-9147](#org9335052)
-    1.  [Keyboard Layout](#org4f1a2dc)
+1.  [persian-input-method: شیوه‌هایِ درج به فارسی‌](#orgd15e0c4)
+2.  [Overview](#orge6fc593)
+    1.  [Installation](#org0843bd8)
+    2.  [Usage](#orgc0d4fa8)
+3.  [farsi-transliterate-banan](#orga9f9a7f)
+4.  [farsi-isiri-9147](#org7860026)
+    1.  [Keyboard Layout](#orgadcd9de)
 
 
 # Overview

@@ -2,7 +2,7 @@
 #+description: Emacs input-methods that support Persian/Farsi editing.
 #+date: 2020:01:27
 #+OPTIONS: toc:nil
-
+#+author: Mohsen BANAN -- http://mohsen.1.banan.byname.net/contact
 
 * persian-input-method: شیوه‌هایِ درج به فارسی‌
 
