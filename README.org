@@ -4,7 +4,7 @@
 #+OPTIONS: toc:nil
 
 
-* persian-input-method:
+* persian-input-method: شیوه‌هایِ درج به فارسی‌
 
 Emacs input-methods that support Persian/Farsi editing.
 Quail package for inputting Persian/Farsi keyboard
@@ -33,6 +33,10 @@ Persian input-methods are distributed with emacs. No installation is required.
 
 #+begin_example
 Options -> Multilingual Environment -> Select Input Method
+
+Then choose either of:
+farsi-transliterate-banan
+farsi-isiri-9147
 #+end_example
 
 #+BEGIN_SRC emacs-lisp
