@@ -1,0 +1,72 @@
+####+BEGIN: bx:dblock:bnsm:top-of-menu "basic"
+*  #Controls:  [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]]  [[elisp:(save-buffer)][Save]]  [[elisp:(kill-buffer)][Quit]]  [[elisp:(bury-buffer)][Bury]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]]
+####+END:
+####+BEGIN: bx:dblock:bnsm:this-node "basic"
+*  This File :: *= /de/bx/nne/dev-py/pypi/pkgs/unisos/Panel.org =*
+####+END:
+####+BEGIN: bx:dblock:bnsm:menu-stack "basic"
+
+####+END:
+####+BEGIN: bx:dblock:bnsm:see-related
+*  [[elisp:(org-cycle)][|#Bash:|]] (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+####+END:
+####+BEGIN: bx:dblock:bnsm:agenda-list
+*  [[elisp:(org-cycle)][|#Marshal:|]]  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] ||  [[elisp:(bx:org:agenda:this-file-otherWin)][Agenda List This]] || [[elisp:(bx:org:todo:this-file-otherWin)][ToDo List This]] |
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]
+####+END:
+*      =====================  
+*  [[elisp:(org-cycle)][| ]]  =pnlDblock-Begins= ::  [[elisp:(org-cycle)][| ]]
+####+BEGIN: bx:dblock:global:file-insert :file "/libre/ByStar/InitialTemplates/bxt/starts/bxtProc/auxNode/commonProcTop.org"
+*  [[elisp:(beginning-of-buffer)][Top]] #####################  [[elisp:(delete-other-windows)][(1)]]               /*  BxTree Common Object Panel (objectType=data) */
+*      ================
+*  [[elisp:(org-cycle)][| ]]  Related BxPanels   ::  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/bxServices/servicesManage/bxSupervision/systemd/fullUsagePanel-en.org")][SystemD]] || [[file:/libre/ByStar/InitialTemplates/activeDocs/bxPlatform/baseDirs/fullUsagePanel-en.org][BaseDirs]] || [[file:/libre/ByStar/InitialTemplates/activeDocs/bxPlatform/baseDirs/disk/fullUsagePanel-en.org][Disks Management]] || [[file:/libre/ByStar/InitialTemplates/activeDocs/bxPlatform/baseDirs/nfs/fullUsagePanel-en.org][NFS]] || [[file:/libre/ByStar/InitialTemplates/activeDocs/bxPlatform/baseDirs/samba/fullUsagePanel-en.org][SAMBA]]   [[elisp:(org-cycle)][| ]]
+*      ================
+
+####+END:
+*  [[elisp:(beginning-of-buffer)][Top]] =pnlDblock-Ends=   ::  [[elisp:(delete-other-windows)][(1)]] 
+*  [[elisp:(beginning-of-buffer)][Top]] #####################  [[elisp:(delete-other-windows)][(1)]]      *ftoProc.sh Invokations* 
+*  [[elisp:(org-cycle)][| ]]  =pnlDblock-Begins= ::  [[elisp:(org-cycle)][| ]]
+####+BEGIN: bx:dblock:global:file-insert :file "/libre/ByStar/InitialTemplates/bxt/starts/bxtProc/auxNode/commonProcInvokes.org"
+*      bxtStartCommon.sh  ::  [[elisp:(bx:iimBash:cmndLineExec :wrapper "echo" :name "bxtStartCommon.sh" :iif "startObjectGen" :iifArgs "auxNode")][bxtStartCommon.sh -i startObjectGen auxNode]]
+*      Begin Templates    ::  [[elisp:(dired "/libre/ByStar/InitialTemplates/bxt/starts/bxtProc/auxNode/")][dired /libre/ByStar/InitialTemplates/bxt/starts/bxtProc/auxNode/]]
+*      commonPanel.sh     ::  [[elisp:(bx:iimBash:cmndLineExec :wrapper "" :name "commonProc.sh" :verbosity "" :callTracking "" :iif "" :iifArgs "")][commonProc.sh]]
+*      commonPanel.sh     ::  [[elisp:(bx:iimBash:cmndLineExec :wrapper "" :name "commonProc.sh" :iif "visit" :iifArgs "")][commonProc.sh -i visit]]
+*      commonPanel.sh     ::  [[elisp:(bx:iimBash:cmndLineExec :wrapper "" :name "commonProc.sh" :iif "clean" :iifArgs "")][commonProc.sh -i clean]]
+*      commonPanel.sh     ::  [[elisp:(lsip-local-run-command-here "diff ./commonProc.sh  /libre/ByStar/InitialTemplates/bxt/starts/bxtProc/auxNode/commonProc.sh")]]
+*      commonPanel.sh     ::  [[elisp:(lsip-local-run-command-here "diff ./commonPanel.org /libre/ByStar/InitialTemplates/bxt/starts/bxtProc/auxNode/commonPanel.org")]]
+
+####+END:
+*  [[elisp:(beginning-of-buffer)][Top]] =pnlDblock-Ends=   ::  [[elisp:(delete-other-windows)][(1)]] 
+*  [[elisp:(beginning-of-buffer)][Top]] #####################  [[elisp:(delete-other-windows)][(1)]]      *Notes -- Status -- Development -- Evolution*
+*      Here               ::    [[elisp:(lsip-local-run-command-here "pwd")][pwd]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "ls -ldt *")][ls -ldt *]] ||  [[elisp:(dired ".")][dired .]]
+*  [[elisp:(org-cycle)][| ]]  Manifest           ::   /Files Description/    [[elisp:(lsip-local-run-command-here "ls -C --file-type -1 | emlStdinGen -p orgLevel=2 -p orgLabel=$(basename $(pwd)) -i lsToManifestStdout")][ls -C -F -1 | emlStdinGen -p orgLevel=2 -p orgLable=$(pwd) -i lsToManifestStdout]]   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  PersonalConfidential      :: clusterShare/ -- Personal Confidential But Shareable Within The Cluster [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  PersonalConfidential      :: commonPanel.org [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  PersonalConfidential      :: commonProc.sh [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  Notes              ::   /Notes, Ideas, Tasks, Agenda/   [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Context      ::  Module Starting Points  [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  Team               ::   /Development Team/ [[elisp:(org-cycle)][| ]]
+*      =====================  
+*  [[elisp:(beginning-of-buffer)][Top]] #####################  [[elisp:(delete-other-windows)][(1)]]      *Common Footer Controls*
+####+BEGIN: bx:dblock:org:parameters :types "agenda"
+#+STARTUP: lognotestate
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+####+END:
+
+
+####+BEGIN: bx:dblock:bnsm:end-of-menu "basic"
+*  #Controls:  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]
+####+END:
+*  [[elisp:(org-cycle)][| ]]  Local Vars  ::                  *Org-Mode And Emacs Specific Configurations*   [[elisp:(org-cycle)][| ]]
+#+CATEGORY: bxPanel
+#+STARTUP: overview
+
+;; Local Variables:
+;; eval: (setq bx:iimp:iimModeArgs "")
+;; eval: (bx:iimp:cmndLineSpecs :name "bxpManage.py")
+;; eval: (bx:iimBash:cmndLineSpecs :name "lcaSambaSysdAdmin.sh")
+;; eval: (setq bx:curUnit "smbd")
+;; End:
