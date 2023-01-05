@@ -1,9 +1,9 @@
-;;; persian.el  --- Quail package for inputting Persian/Farsi keyboard	-*- coding: utf-8;-*-
+;;; persian.el --- Quail package for inputting Persian/Farsi keyboard	-*- coding: utf-8; lexical-binding: t -*-
 
-;; Copyright (C) 2011-2012 Free Software Foundation, Inc.
+;; Copyright (C) 2011-2022 Free Software Foundation, Inc.
 
-;; Author: Mohsen BANAN <libre@mohsen.1.banan.byname.net>
-;; X-URL: http://mohsen.1.banan.byname.net/contact
+;; Author: Mohsen BANAN <emacs@mohsen.1.banan.byname.net>
+;; URL: http://mohsen.1.banan.byname.net/contact
 
 ;; Keywords: multilingual, input method, Farsi, Persian, keyboard
 
@@ -20,7 +20,7 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
+;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 ;;
@@ -215,7 +215,7 @@
  (">" ?<)
  ("?" ?؟)
 
- ;; Level 3 Entered with \ 
+ ;; Level 3 Entered with \
  ;;
  ("\\" ?\\)  ;; خط اريب وارو
  ("\\\\" ?\\)
@@ -464,24 +464,46 @@
  ("_"  ?ـ)  ;;
 
 
-;;;;;;;;;;;  isiri-6219 Table 1 -- جدول ۱ -  نویسه‌های کنترلی
+;;;;;;;;;;;  isiri-6219 Table 1 (plus bidi updates) - جدول ۱ -  نویسه‌های کنترلی
  ;; LF
  ;; CR
  ("&zwnj;" ?\u200C) ;; (ucs-insert #x200C)‌   named: فاصله‌ی مجازی
  ("/" ?\u200C)      ;;
  ("&zwj;" ?\u200D)  ;; (ucs-insert #x200D)‍   named: اتصالِ مجازی
  ("J" ?\u200D)      ;;
- ("&lrm;" ?\u200E)  ;; (ucs-insert #x200E)‎   named: نشانه‌ی چپ‌به‌راست
- ("&rlm;" ?\u200F)  ;; (ucs-insert #x200F)‏   named: نشانه‌ی راست‌به‌چپ
  ("&ls;" ?\u2028)   ;; (ucs-insert #x2028)    named: جداکننده‌ی سطرها
- ("&ps;" ?\u2028)   ;; (ucs-insert #x2029)    named: جداکننده‌ی بندها
- ("&lre;" ?\u202A)   ;; (ucs-insert #x202A)‪   named: زیرمتنِ چپ‌به‌راست
- ("&rle;" ?\u202B)   ;; (ucs-insert #x202B)   named: زیرمتنِ راست‌به‌چپ
- ("&pdf;" ?\u202C)   ;; (ucs-insert #x202C)   named: پایانِ زیرمتن
- ("&lro;" ?\u202D)   ;; (ucs-insert #x202D)   named: زیرمتنِ اکیداً چپ‌به‌راست
- ("&rlo;" ?\u202D)   ;; (ucs-insert #x202E)   named: زیرمتنِ اکیداً راست‌به‌چپ
+ ("&ps;" ?\u2029)   ;; (ucs-insert #x2029)    named: جداکننده‌ی بندها
+ ;;
+ ;; Byte Order Mark (Historic)
  ("&bom;" ?\uFEFF)   ;; (ucs-insert #xFEFF)   named: نشانه‌ی ترتیبِ بایت‌ها
-
+ ;; BIDI Controls
+ ;; -------
+ ;; LEFT-TO-RIGHT MARK (strongly typed LTR character)
+ ("&lrm;" ?\u200E)  ;; (ucs-insert #x200E)‎   named: نشانه‌ی چپ‌به‌راست
+ ("L" ?\u200E)
+ ;; RIGHT-TO-LEFT MARK (strongly typed RTL character)
+ ("&rlm;" ?\u200F)  ;; (ucs-insert #x200F)‏   named: نشانه‌ی راست‌به‌چپ
+ ("R" ?\u200F)
+ ;; LEFT-TO-RIGHT ISOLATE (sets base direction to LTR & isolates the embedded)
+ ("&lri;" ?\u2066)   ;; (ucs-insert #x2066)‪
+ ;; RIGHT-TO-LEFT ISOLATE (sets base direction to RTL & isolates the embedded)
+ ("&rli;" ?\u2067)   ;; (ucs-insert #x2067)
+ ;; FIRST-STRONG ISOLATE (isolates content & sets dir to first strongly typed)
+ ("&fsi;" ?\u2068)   ;; (ucs-insert #x2068)
+ ;; POP DIRECTIONAL ISOLATE (used for RLI, LRI or FSI)
+ ("&pdi;" ?\u2069)   ;; (ucs-insert #x2069)
+ ;; LEFT-TO-RIGHT EMBEDDING (sets base dir to LTR but allows embedded text)
+ ("&lre;" ?\u202A)   ;; (ucs-insert #x202A)‪   named: زیرمتنِ چپ‌به‌راست
+ ("B" ?\u202A)
+ ;; RIGHT-TO-LEFT EMBEDDING (sets base dir to RTL but allows embedded text)
+ ("&rle;" ?\u202B)   ;; (ucs-insert #x202B)   named: زیرمتنِ راست‌به‌چپ
+ ;; POP DIRECTIONAL FORMATTING (used for RLE or LRE and RLO or LRO)
+ ("&pdf;" ?\u202C)   ;; (ucs-insert #x202C)   named: پایانِ زیرمتن
+ ("P" ?\u202C)
+ ;; LEFT-TO-RIGHT OVERRIDE (overrides the bidirectional algorithm, display LTR)
+ ("&lro;" ?\u202D)   ;; (ucs-insert #x202D)   named: زیرمتنِ اکیداً چپ‌به‌راست
+ ;; RIGHT-TO-LEFT OVERRIDE (overrides the bidirectional algorithm, display RTL)
+ ("&rlo;" ?\u202E)   ;; (ucs-insert #x202E)   named: زیرمتنِ اکیداً راست‌به‌چپ
 
 ;;;;;;;;;;;  isiri-6219 Table 7 -- جدول ۷ -  نشانه‌هایِ فارسی
  ("^"  ?َ)  ;; zbar ;; زبر فارسى
