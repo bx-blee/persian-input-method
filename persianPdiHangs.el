@@ -493,7 +493,7 @@
  ;; POP DIRECTIONAL ISOLATE (used for RLI, LRI or FSI)
  ;; EMACS BUG
  ;; If ("&pdi;" ?\u2069)  is included Emacs fully hangs with a (describe-input-method 'farsi-transliterate-banan)
- ;;("&pdi;" ?\u2069)   ;; (ucs-insert #x2069)
+ ("&pdi;" ?\u2069)   ;; (ucs-insert #x2069)
  ;; LEFT-TO-RIGHT EMBEDDING (sets base dir to LTR but allows embedded text)
  ("&lre;" ?\u202A)   ;; (ucs-insert #x202A)   named: زیرمتنِ چپ‌به‌راست
  ("B" ?\u202A)
