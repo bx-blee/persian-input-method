@@ -1,0 +1,29 @@
+* Ways of Getting Shift-Space to map to half space in Persian input method
+
+(pgtk-use-im-context nil)
+
+(defvar my-arabic-modifier-mode-map
+  (let ((map (make-sparse-keymap)))
+    ;; Example: Map C-a to insert a special Arabic symbol
+    (define-key map (kbd "C-a")
+      (lambda () (interactive) (insert "۞")))
+    ;; Example: Map Shift-F to something else
+    (define-key map (kbd "S-f")
+      (lambda () (interactive) (insert "﷽")))
+    map))
+
+(define-minor-mode my-arabic-modifier-mode
+  "Minor mode to add modifier-based input on top of a Quail input method."
+  :lighter " 🔤Mod"
+  :keymap my-arabic-modifier-mode-map)
+
+
+(set-input-method "my-fancy-arabic")
+(my-arabic-modifier-mode 1)
+
+
+(defun my-enable-arabic-input ()
+  "Enable Quail input method and modifier key extensions."
+  (interactive)
+  (set-input-method "my-fancy-arabic")
+  (my-arabic-modifier-mode 1))
